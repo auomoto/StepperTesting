@@ -1,4 +1,3 @@
-
 # Atmel files
 *.map
 *.lss
@@ -8,6 +7,10 @@
 *.xml
 *.atsn
 *.atsuo
+*.srec
+*.d
+*.o
+*.mk
 
 # Windows image file caches
 Thumbs.db
