@@ -16,6 +16,7 @@
 *.b#?
 *.s#?
 *.pro
+*.epf
 Makefile
 
 # Windows image file caches
