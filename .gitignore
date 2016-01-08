@@ -5,12 +5,17 @@
 *.eep
 *.cproj
 *.xml
-*.atsn
+*.atsln
 *.atsuo
 *.srec
 *.d
 *.o
 *.mk
+
+# Eagle files
+*.b#?
+*.pro
+Makefile
 
 # Windows image file caches
 Thumbs.db
