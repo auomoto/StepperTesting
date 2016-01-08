@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12071,7 +12071,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </classes>
 <parts>
 <part name="IC1" library="bog-thoughts_AVR" deviceset="ATTINY441/841" device="-SSU" value="ATTINY841"/>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="14.7456"/>
+<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49S" value="14.7456 MHz"/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="0207/7" value="10K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -12111,20 +12111,20 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="IC1" gate="IC1" x="5.08" y="48.26"/>
 <instance part="Q1" gate="G$1" x="104.14" y="55.88" smashed="yes" rot="MR0">
 <attribute name="NAME" x="106.68" y="51.816" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="101.6" y="53.34" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="111.76" y="58.42" size="1.4224" layer="96" font="vector" ratio="10" rot="MR0"/>
 </instance>
 <instance part="R1" gate="G$1" x="83.82" y="71.12" rot="R90"/>
-<instance part="GND2" gate="1" x="96.52" y="43.18"/>
+<instance part="GND2" gate="1" x="96.52" y="45.72"/>
 <instance part="GND3" gate="1" x="111.76" y="45.72"/>
 <instance part="GND4" gate="1" x="111.76" y="5.08"/>
 <instance part="GND6" gate="1" x="127" y="25.4"/>
-<instance part="GND7" gate="1" x="101.6" y="63.5"/>
+<instance part="GND7" gate="1" x="101.6" y="66.04"/>
 <instance part="GND8" gate="1" x="-38.1" y="40.64"/>
 <instance part="JP1" gate="G$1" x="96.52" y="12.7"/>
 <instance part="LED1" gate="G$1" x="48.26" y="78.74" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="71.12" rot="R90"/>
 <instance part="GND1" gate="1" x="55.88" y="68.58"/>
-<instance part="S1" gate="G$1" x="96.52" y="68.58" rot="R270"/>
+<instance part="S1" gate="G$1" x="96.52" y="71.12" rot="R270"/>
 <instance part="JP40" gate="G$1" x="86.36" y="-22.86" rot="MR180"/>
 <instance part="JP50" gate="G$1" x="93.98" y="-20.32" rot="MR0"/>
 <instance part="GND5" gate="1" x="104.14" y="-38.1"/>
@@ -12155,10 +12155,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="83.82" y1="63.5" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
 <junction x="83.82" y="63.5"/>
 <wire x1="83.82" y1="63.5" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="90.17" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="5"/>
 <wire x1="83.82" y1="10.16" x2="91.44" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="63.5" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="63.5" x2="90.17" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="1"/>
 <junction x="83.82" y="10.16"/>
 <wire x1="83.82" y1="10.16" x2="83.82" y2="-2.54" width="0.1524" layer="91"/>
@@ -12266,7 +12267,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="66.04" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="68.58" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -12289,7 +12290,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="45.72" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
