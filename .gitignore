@@ -1,3 +1,14 @@
+
+# Atmel files
+*.map
+*.lss
+*.elf
+*.eep
+*.cproj
+*.xml
+*.atsn
+*.atsuo
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
